@@ -1,0 +1,98 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  margin: 20px 0;
+  font-weight: bold;
+  /* font-size: 20px; */
+      font-size: xx-large;
+}
+
+.logo {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.circle-logo {
+  height: 9px;
+  width: 9px;
+  background-color: #FFCC00;
+  border-radius: 50%;
+  margin-left: 4px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.list li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.list li a:hover {
+  color: #FFCC00;
+  transition: 0.2s ease;
+}
+
+.btn button {
+  padding: 12px 22px;
+  border-radius: 25px;
+  margin: 0 5px;
+  border: none;
+  font-weight: 600;
+      font-size: large;
+}
+
+.btn1:hover {
+  background-color: #FFCC00;
+}
+
+.btn2 {
+  background-color: black;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .nav {
+    padding: 20px 40px;
+  }
+  .list {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  .list {
+    justify-content: center;
+    gap: 15px;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .list {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .btn button {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+}

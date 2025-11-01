@@ -1,0 +1,84 @@
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  padding: 80px 100px;
+  background: #fdfcf8;
+  position: relative;
+  z-index: 0;
+}
+
+.feature-card {
+  text-align: center;
+  max-width: 250px;
+  flex: 1 1 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  position: relative;
+}
+
+.card-icon::before,
+.wallet-icon::before,
+.price-icon::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: -10px;
+  left: -15px;
+  z-index: -1;
+}
+
+.card-icon::before {
+  background: #a2f4c2;
+}
+
+.wallet-icon::before {
+  background: #ffcc00;
+}
+
+.price-icon::before {
+  background: #ffcc00;
+}
+
+.feature-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .features {
+    gap: 40px;
+    padding: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 30px;
+    gap: 30px;
+  }
+
+  .feature-card {
+    max-width: 100%;
+  }
+}
