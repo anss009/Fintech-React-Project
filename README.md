@@ -15,7 +15,7 @@ A modern fintech landing page built with React using a component-based architect
 - Vercel
 
 ## 🌐 Live Demo
-https://your-fintech-app.vercel.app
+https://anss-fintech.vercel.app/
 
 ## 📌 What I Learned
 - React component design
