@@ -22,8 +22,4 @@ https://anss-fintech.vercel.app/
 - Reusability and maintainability
 - Responsive UI implementation
 
-## 📷 Screenshots
-(Add screenshots)
 
-## 👤 Author
-Muhammad Anss
